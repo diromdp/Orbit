@@ -40,6 +40,24 @@ export const Wrapper = styled.div`
     .new-list {
       display: flex;
       padding-bottom: 30px;
+      overflow-y: hidden;
+      &::-webkit-scrollbar {
+        width: 12px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #fff
+        border-radius: 10px;
+      }
+
+      &:hover {
+        &::-webkit-scrollbar-thumb {
+          background-color:#babac0;
+          border-radius:16px;
+          border:5px solid #fff
+        }
+      }
+  
       .new-list-item {
         display: block;
         width: 213px;
@@ -174,7 +192,6 @@ export const Wrapper = styled.div`
             margin-bottom: 18px;
           }
           @media (max-width: 414px) {
-            
           }
           h2 {
             font-family: Nunito;

@@ -1,8 +1,7 @@
 // Vendors
 import React from "react";
-import SwiperCore, { Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
 import { Row, Col } from "antd";
+import Slider from "react-slick";
 
 // Next
 import Head from "next/head";
@@ -11,9 +10,16 @@ import Layout from "../components/layout";
 
 //style
 import { Wrapper } from "./style";
-SwiperCore.use([Pagination]);
 
 export default function Home({ appName }) {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+  };
   return (
     <>
       <Head>
@@ -21,33 +27,23 @@ export default function Home({ appName }) {
       </Head>
       <Layout>
         <Wrapper>
-          <Swiper pagination={{ el: ".swiper-pagination", clickable: true }}>
-            <SwiperSlide>
-              <div className="banner-promo-item">
-                <img src="https://via.placeholder.com/375x188" />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="banner-promo-item">
-                <img src="https://via.placeholder.com/375x188" />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="banner-promo-item">
-                <img src="https://via.placeholder.com/375x188" />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="banner-promo-item">
-                <img src="https://via.placeholder.com/375x188" />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="banner-promo-item">
-                <img src="https://via.placeholder.com/375x188" />
-              </div>
-            </SwiperSlide>
-          </Swiper>
+          <Slider {...settings}>
+            <div className="banner-promo-item">
+              <img src="https://via.placeholder.com/375x188" />
+            </div>
+            <div className="banner-promo-item">
+              <img src="https://via.placeholder.com/375x188" />
+            </div>
+            <div className="banner-promo-item">
+              <img src="https://via.placeholder.com/375x188" />
+            </div>
+            <div className="banner-promo-item">
+              <img src="https://via.placeholder.com/375x188" />
+            </div>
+            <div className="banner-promo-item">
+              <img src="https://via.placeholder.com/375x188" />
+            </div>
+          </Slider>
           <div className="content-list">
             <div className="content-list__title">
               <h3>New Room</h3>
@@ -56,161 +52,131 @@ export default function Home({ appName }) {
               </Link>
             </div>
             <div className="new-list">
-              <Swiper
-                freeMode={true}
-                centeredSlides={true}
-                grabCursor={true}
-                breakpoints={{
-                  320: {
-                    slidesPerView: 2,
-                    spaceBetween: 100,
-                  },
-                  480: {
-                    slidesPerView: 1,
-                    spaceBetween: 50,
-                  },
-                  992: {
-                    spaceBetween: 20,
-                    slidesPerView: 3,
-                  },
-                }}
-              >
-                <SwiperSlide>
-                  <div className="new-list-item">
-                    <div className="label-status">New</div>
-                    <img
-                      className="img-new"
-                      src="https://via.placeholder.com/213x120"
-                    />
-                    <div className="new-list-item__content">
-                      <h3>Rp 200.000</h3>
-                      <p>514 Beach 139th St #B6 Rock away Park, NY 11694</p>
-                      <div className="new-list-item__content-icon">
-                        <div className="icon-list">
-                          <img src="/img/bathtub.png" />
-                          <span>1</span>
-                        </div>
-                        <div className="icon-list">
-                          <img src="/img/bed.png" />
-                          <span>1</span>
-                        </div>
-                        <div className="icon-list">
-                          <img src="/img/square.png" />
-                          <span>1</span>
-                        </div>
-                      </div>
+              <div className="new-list-item">
+                <div className="label-status">New</div>
+                <img
+                  className="img-new"
+                  src="https://via.placeholder.com/213x120"
+                />
+                <div className="new-list-item__content">
+                  <h3>Rp 200.000</h3>
+                  <p>514 Beach 139th St #B6 Rock away Park, NY 11694</p>
+                  <div className="new-list-item__content-icon">
+                    <div className="icon-list">
+                      <img src="/img/bathtub.png" />
+                      <span>1</span>
+                    </div>
+                    <div className="icon-list">
+                      <img src="/img/bed.png" />
+                      <span>1</span>
+                    </div>
+                    <div className="icon-list">
+                      <img src="/img/square.png" />
+                      <span>1</span>
                     </div>
                   </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="new-list-item">
-                    <div className="label-status">New</div>
-                    <img
-                      className="img-new"
-                      src="https://via.placeholder.com/213x120"
-                    />
-                    <div className="new-list-item__content">
-                      <h3>Rp 200.000</h3>
-                      <p>514 Beach 139th St #B6 Rock away Park, NY 11694</p>
-                      <div className="new-list-item__content-icon">
-                        <div className="icon-list">
-                          <img src="/img/bathtub.png" />
-                          <span>1</span>
-                        </div>
-                        <div className="icon-list">
-                          <img src="/img/bed.png" />
-                          <span>1</span>
-                        </div>
-                        <div className="icon-list">
-                          <img src="/img/square.png" />
-                          <span>1</span>
-                        </div>
-                      </div>
+                </div>
+              </div>
+              <div className="new-list-item">
+                <div className="label-status">New</div>
+                <img
+                  className="img-new"
+                  src="https://via.placeholder.com/213x120"
+                />
+                <div className="new-list-item__content">
+                  <h3>Rp 200.000</h3>
+                  <p>514 Beach 139th St #B6 Rock away Park, NY 11694</p>
+                  <div className="new-list-item__content-icon">
+                    <div className="icon-list">
+                      <img src="/img/bathtub.png" />
+                      <span>1</span>
+                    </div>
+                    <div className="icon-list">
+                      <img src="/img/bed.png" />
+                      <span>1</span>
+                    </div>
+                    <div className="icon-list">
+                      <img src="/img/square.png" />
+                      <span>1</span>
                     </div>
                   </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="new-list-item">
-                    <div className="label-status">New</div>
-                    <img
-                      className="img-new"
-                      src="https://via.placeholder.com/213x120"
-                    />
-                    <div className="new-list-item__content">
-                      <h3>Rp 200.000</h3>
-                      <p>514 Beach 139th St #B6 Rock away Park, NY 11694</p>
-                      <div className="new-list-item__content-icon">
-                        <div className="icon-list">
-                          <img src="/img/bathtub.png" />
-                          <span>1</span>
-                        </div>
-                        <div className="icon-list">
-                          <img src="/img/bed.png" />
-                          <span>1</span>
-                        </div>
-                        <div className="icon-list">
-                          <img src="/img/square.png" />
-                          <span>1</span>
-                        </div>
-                      </div>
+                </div>
+              </div>
+              <div className="new-list-item">
+                <div className="label-status">New</div>
+                <img
+                  className="img-new"
+                  src="https://via.placeholder.com/213x120"
+                />
+                <div className="new-list-item__content">
+                  <h3>Rp 200.000</h3>
+                  <p>514 Beach 139th St #B6 Rock away Park, NY 11694</p>
+                  <div className="new-list-item__content-icon">
+                    <div className="icon-list">
+                      <img src="/img/bathtub.png" />
+                      <span>1</span>
+                    </div>
+                    <div className="icon-list">
+                      <img src="/img/bed.png" />
+                      <span>1</span>
+                    </div>
+                    <div className="icon-list">
+                      <img src="/img/square.png" />
+                      <span>1</span>
                     </div>
                   </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="new-list-item">
-                    <div className="label-status">New</div>
-                    <img
-                      className="img-new"
-                      src="https://via.placeholder.com/213x120"
-                    />
-                    <div className="new-list-item__content">
-                      <h3>Rp 200.000</h3>
-                      <p>514 Beach 139th St #B6 Rock away Park, NY 11694</p>
-                      <div className="new-list-item__content-icon">
-                        <div className="icon-list">
-                          <img src="/img/bathtub.png" />
-                          <span>1</span>
-                        </div>
-                        <div className="icon-list">
-                          <img src="/img/bed.png" />
-                          <span>1</span>
-                        </div>
-                        <div className="icon-list">
-                          <img src="/img/square.png" />
-                          <span>1</span>
-                        </div>
-                      </div>
+                </div>
+              </div>
+              <div className="new-list-item">
+                <div className="label-status">New</div>
+                <img
+                  className="img-new"
+                  src="https://via.placeholder.com/213x120"
+                />
+                <div className="new-list-item__content">
+                  <h3>Rp 200.000</h3>
+                  <p>514 Beach 139th St #B6 Rock away Park, NY 11694</p>
+                  <div className="new-list-item__content-icon">
+                    <div className="icon-list">
+                      <img src="/img/bathtub.png" />
+                      <span>1</span>
+                    </div>
+                    <div className="icon-list">
+                      <img src="/img/bed.png" />
+                      <span>1</span>
+                    </div>
+                    <div className="icon-list">
+                      <img src="/img/square.png" />
+                      <span>1</span>
                     </div>
                   </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="new-list-item">
-                    <div className="label-status">New</div>
-                    <img
-                      className="img-new"
-                      src="https://via.placeholder.com/213x120"
-                    />
-                    <div className="new-list-item__content">
-                      <h3>Rp 200.000</h3>
-                      <p>514 Beach 139th St #B6 Rock away Park, NY 11694</p>
-                      <div className="new-list-item__content-icon">
-                        <div className="icon-list">
-                          <img src="/img/bathtub.png" />
-                          <span>1</span>
-                        </div>
-                        <div className="icon-list">
-                          <img src="/img/bed.png" />
-                          <span>1</span>
-                        </div>
-                        <div className="icon-list">
-                          <img src="/img/square.png" />
-                          <span>1</span>
-                        </div>
-                      </div>
+                </div>
+              </div>
+              <div className="new-list-item">
+                <div className="label-status">New</div>
+                <img
+                  className="img-new"
+                  src="https://via.placeholder.com/213x120"
+                />
+                <div className="new-list-item__content">
+                  <h3>Rp 200.000</h3>
+                  <p>514 Beach 139th St #B6 Rock away Park, NY 11694</p>
+                  <div className="new-list-item__content-icon">
+                    <div className="icon-list">
+                      <img src="/img/bathtub.png" />
+                      <span>1</span>
+                    </div>
+                    <div className="icon-list">
+                      <img src="/img/bed.png" />
+                      <span>1</span>
+                    </div>
+                    <div className="icon-list">
+                      <img src="/img/square.png" />
+                      <span>1</span>
                     </div>
                   </div>
-                </SwiperSlide>
-              </Swiper>
+                </div>
+              </div>
             </div>
           </div>
           <div className="content-open">
