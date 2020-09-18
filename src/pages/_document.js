@@ -1,5 +1,4 @@
-import Document, { Main, NextScript } from "next/document";
-import Head from "next/head";
+import Document, { Main, Head, NextScript } from "next/document";
 // Import styled components ServerStyleSheet
 import { ServerStyleSheet } from "styled-components";
 

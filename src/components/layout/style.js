@@ -1,7 +1,8 @@
-import styled from 'styled-components';
-
+import styled from "styled-components";
 
 export const BodyWrapper = styled.div`
-
-
+  main {
+    background: #fff;
+    margin-top: 70px;
+  }
 `;

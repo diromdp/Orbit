@@ -3,6 +3,10 @@ const nextBuildId = require('next-build-id');
 
 const isProd = process.env.NEXT_PUBLIC_APP_ENV === 'production';
 
+const withSass = require('@zeit/next-sass')
+module.exports = withSass({
+  /* config options here */
+})
 const compose = (plugins) => ({
   webpack(config, options) {
     return plugins.reduce((config, plugin) => {
