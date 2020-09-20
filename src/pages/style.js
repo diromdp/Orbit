@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
+margin-bottom: 80px;
   .slick-dots {
     bottom: 15px !important;
   }
