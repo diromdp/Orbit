@@ -14,4 +14,7 @@ font-family: 'Nunito', sans-serif;
         margin-right: auto;
         margin-left: auto;
     }
+    .slick-dots {
+        
+    }
 `;

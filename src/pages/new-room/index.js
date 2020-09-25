@@ -13,7 +13,7 @@ import { Wrapper } from "./style";
 const NewList = dynamic(() => import('../../components/hoc/NewListing'));
 
 
-export default function Home({ appName }) {
+export default function NewRoom({ appName }) {
   return (
     <>
       <Head>
