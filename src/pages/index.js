@@ -127,56 +127,6 @@ export default function Home({ appName }) {
                   </div>
                 </div>
               </div>
-              <div className="new-list-item">
-                <div className="label-status">New</div>
-                <img
-                  className="img-new"
-                  src="https://via.placeholder.com/213x120"
-                />
-                <div className="new-list-item__content">
-                  <h3>Rp 200.000</h3>
-                  <p>514 Beach 139th St #B6 Rock away Park, NY 11694</p>
-                  <div className="new-list-item__content-icon">
-                    <div className="icon-list">
-                      <img src="/img/bathtub.png" />
-                      <span>1</span>
-                    </div>
-                    <div className="icon-list">
-                      <img src="/img/bed.png" />
-                      <span>1</span>
-                    </div>
-                    <div className="icon-list">
-                      <img src="/img/square.png" />
-                      <span>1</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="new-list-item">
-                <div className="label-status">New</div>
-                <img
-                  className="img-new"
-                  src="https://via.placeholder.com/213x120"
-                />
-                <div className="new-list-item__content">
-                  <h3>Rp 200.000</h3>
-                  <p>514 Beach 139th St #B6 Rock away Park, NY 11694</p>
-                  <div className="new-list-item__content-icon">
-                    <div className="icon-list">
-                      <img src="/img/bathtub.png" />
-                      <span>1</span>
-                    </div>
-                    <div className="icon-list">
-                      <img src="/img/bed.png" />
-                      <span>1</span>
-                    </div>
-                    <div className="icon-list">
-                      <img src="/img/square.png" />
-                      <span>1</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
           <div className="content-open">

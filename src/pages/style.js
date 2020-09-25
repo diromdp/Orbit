@@ -61,7 +61,7 @@ margin-bottom: 80px;
   
       .new-list-item {
         display: block;
-        width: 213px;
+        width: 100%;
         position: relative;
         .label-status {
           padding: 3px 10px;
@@ -81,15 +81,8 @@ margin-bottom: 80px;
           top: 10px;
           left: 5px;
         }
-        &:first-child {
-          @media (min-width: 992px) {
-          }
-          @media (min-width: 768px) and (max-width: 991px) {
-            margin-left: 110px;
-          }
-          @media (max-width: 414px) {
-            margin-left: 110px;
-          }
+        &:last-child {
+          margin-right: 0px;
         }
 
         @media (min-width: 992px) {
