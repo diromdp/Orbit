@@ -16,19 +16,19 @@ const SlideRoom = () => {
       <Wrapper>
         <Slider {...settings}>
           <div className="banner-item">
-            <img src="https://via.placeholder.com/450x300" />
+            <img src="https://via.placeholder.com/400x200" />
           </div>
           <div className="banner-item">
-            <img src="https://via.placeholder.com/450x300" />
+            <img src="https://via.placeholder.com/400x200" />
           </div>
           <div className="banner-item">
-            <img src="https://via.placeholder.com/450x300" />
+            <img src="https://via.placeholder.com/400x200" />
           </div>
           <div className="banner-item">
-            <img src="https://via.placeholder.com/450x300" />
+            <img src="https://via.placeholder.com/400x200" />
           </div>
           <div className="banner-item">
-            <img src="https://via.placeholder.com/450x300" />
+            <img src="https://via.placeholder.com/400x200" />
           </div>
         </Slider>
       </Wrapper>

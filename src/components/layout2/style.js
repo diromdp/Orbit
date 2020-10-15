@@ -3,6 +3,6 @@ import styled from "styled-components";
 export const BodyWrapper = styled.div`
   main {
     background: #fff;
-    margin-top: 70px;
+    margin-top: 55px;
   }
 `;

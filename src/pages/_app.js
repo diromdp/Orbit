@@ -6,7 +6,7 @@ import { GlobalStyle } from "../styles/global";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-class MyApp extends App {
+class SukaSewa extends App {
   render() {
     const { Component, pageProps } = this.props;
 
@@ -20,4 +20,4 @@ class MyApp extends App {
   }
 }
 
-export default MyApp;
+export default SukaSewa;

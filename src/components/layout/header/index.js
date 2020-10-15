@@ -1,6 +1,5 @@
 import React from "react";
 import { Wrapper, Nav } from "./style";
-import { Row, Col } from "antd";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -13,7 +12,7 @@ const Navbar = () => {
               <a className="search-bar">
                 <div className="search-bar__content">
                   <img src="/img/search-bar.svg" />
-                  <span>Search</span>
+                  <span>Kemana anda ingin pergi</span>
                 </div>
               </a>
             </Link>
