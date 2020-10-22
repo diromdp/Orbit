@@ -11,6 +11,7 @@ import Link from 'next/link';
 import { Wrapper } from "./style";
 
 //component
+const Heads = dynamic(() => import("../../components/headExternal"));
 
 export default function Regist({ appName }) {
   return (
@@ -45,6 +46,7 @@ export default function Regist({ appName }) {
       <Wrapper>
         <div className="container">
           <main>
+            <Heads/>
             <div className="login-page">
               <div className="login-page__header">
                 <img src="/img/logo.png" />
@@ -111,7 +113,7 @@ export default function Regist({ appName }) {
                   
                   <Form.Item className="d-block">
                     <Button type="primary" htmlType="submit">
-                      Submit
+                      Register
                     </Button>
                   </Form.Item>
                 </Form>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Wrapper } from "./style";
 import Link from "next/link";
 
-const Head = () => {
+const HeadEx = () => {
   return (
     <>
       <Wrapper>
@@ -20,4 +20,4 @@ const Head = () => {
   );
 };
 
-export default Head;
+export default HeadEx;

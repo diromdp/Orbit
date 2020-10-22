@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Wrapper } from "./style";
 import Link from "next/link";
 
-const Head = () => {
+const Head = ({ title}) => {
   return (
     <>
       <Wrapper>
@@ -13,6 +13,7 @@ const Head = () => {
                 <i class="las la-angle-left"></i>
               </a>
             </Link>
+            <span className="title-navbar">{title}</span>
           </nav>
         </div>
       </Wrapper>

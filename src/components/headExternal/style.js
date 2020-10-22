@@ -12,7 +12,7 @@ export const Wrapper = syled.div`
   .navbar {
     .back-to {
       .las {
-        color: #fff;
+        color: #454555;
         @media (min-width: 992px) {
         font-size: 24px;
         }

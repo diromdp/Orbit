@@ -94,7 +94,7 @@ export default function Login({ appName }) {
                   </Form.Item>
                   <Form.Item className="d-block">
                     <Button type="primary" htmlType="submit">
-                      Submit
+                      Login
                     </Button>
                   </Form.Item>
                 </Form>
