@@ -3,7 +3,10 @@ import App from "next/app";
 import "antd/dist/antd.css";
 import StyleReset from "../styles/reset";
 import { GlobalStyle } from "../styles/global";
-class MyApp extends App {
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
+class SukaSewa extends App {
   render() {
     const { Component, pageProps } = this.props;
 
@@ -17,4 +20,4 @@ class MyApp extends App {
   }
 }
 
-export default MyApp;
+export default SukaSewa;
