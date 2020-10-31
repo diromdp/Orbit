@@ -15,7 +15,7 @@ const Footer = dynamic(() => import("../../components/layout/footer"));
 //style
 import { Wrapper } from "./style";
 
-export default function Room({ appName }) {
+export default function ConfirmPayment({ appName }) {
   return (
     <>
       <Head>
@@ -70,8 +70,12 @@ export default function Room({ appName }) {
                 <div className="item-t">Rp 300.000 x 1 malam</div>
                 <div className="item-p">Rp 300.000</div>
               </div>
+              <div className="item">
+                <div className="item-t">Fee</div>
+                <div className="item-p">Rp 0</div>
+              </div>
               <div className="item-bold">
-                <div className="item-t">Total(USD)</div>
+                <div className="item-t">Total</div>
                 <div className="item-p">Rp 310.000</div>
               </div>
             </div>
