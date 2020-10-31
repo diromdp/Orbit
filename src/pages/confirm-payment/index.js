@@ -13,7 +13,7 @@ import Layout from "../../components/layout2";
 const Heads = dynamic(() => import("../../components/head"));
 const Footer = dynamic(() => import("../../components/layout/footer"));
 //style
-import { Wrapper } from "./style";
+import Wrapper from "./style";
 
 export default function ConfirmPayment({ appName }) {
   return (

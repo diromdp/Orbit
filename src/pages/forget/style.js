@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+const Wrapper = styled.div`
   main {
     background: #fff;
     .login-page {
@@ -80,3 +80,5 @@ export const Wrapper = styled.div`
     }
   }
 `;
+
+export default Wrapper;

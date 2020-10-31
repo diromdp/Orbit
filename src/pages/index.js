@@ -9,7 +9,7 @@ import Link from "next/link";
 import Layout from "../components/layout";
 
 //style
-import { Wrapper } from "./style";
+import Wrapper from "./style";
 
 export default function Home({ appName }) {
   const settings = {

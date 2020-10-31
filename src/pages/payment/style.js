@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+const Wrapper = styled.div`
   .payment-list {
     &__item {
       padding: 15px;
@@ -50,3 +50,4 @@ export const Wrapper = styled.div`
     background: #eeeeef;
   }
 `;
+export default Wrapper;

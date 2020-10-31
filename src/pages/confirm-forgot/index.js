@@ -8,16 +8,16 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 
 //style
-import { Wrapper } from "./style";
+import Wrapper from "./style";
 
 //component
 const Heads = dynamic(() => import("../../components/headExternal"));
 
-export default function Forget({ appName }) {
+const Forgot = () => {
   return (
     <>
       <Head>
-        <title>Forget Password {appName}</title>
+        <title>Forget Password</title>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -68,3 +68,5 @@ export default function Forget({ appName }) {
     </>
   );
 }
+
+export default Forgot;

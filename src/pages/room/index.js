@@ -16,7 +16,7 @@ const SlideRoom = dynamic(() =>
 const ButtonPayout = dynamic(() => import("../../components/hoc/ButtonPayout"));
 
 //style
-import { Wrapper } from "./style";
+import Wrapper from "./style";
 
 export default function Room({ appName }) {
   return (

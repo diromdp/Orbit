@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+const Wrapper = styled.div`
   .payment-list {
     &__ins {
       .ant-collapse {
@@ -93,7 +93,6 @@ export const Wrapper = styled.div`
       border-color: #f99c96;
       height: 40px;
       width: 100%;
-
       span {
         font-family: Nunito;
         font-style: normal;
@@ -112,3 +111,4 @@ export const Wrapper = styled.div`
     background: #eeeeef;
   }
 `;
+export default Wrapper;

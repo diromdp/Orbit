@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+const Wrapper = styled.div`
   margin-top: 60px;
   display: block;
   .confirm-payment {
@@ -172,3 +172,5 @@ export const Wrapper = styled.div`
     }
   }
 `;
+
+export default Wrapper;
