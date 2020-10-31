@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+const Wrapper = styled.div`
   .slick-dots {
     bottom: 25px;
   }
@@ -318,3 +318,4 @@ export const Wrapper = styled.div`
     }
   }
 `;
+export default Wrapper;

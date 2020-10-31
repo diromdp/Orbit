@@ -15,7 +15,7 @@ const Footer = dynamic(() => import("../../components/layout/footer"));
 const { Panel } = Collapse;
 
 //style
-import { Wrapper } from "./style";
+import Wrapper from "./style";
 
 export default function PaymentNext({ appName }) {
 

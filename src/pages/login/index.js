@@ -8,7 +8,7 @@ import dynamic from "next/dynamic";
 import Link from 'next/link';
 
 //style
-import { Wrapper } from "./style";
+import Wrapper from "./style";
 
 //component
 const NewList = dynamic(() => import("../../components/hoc/NewListing"));
