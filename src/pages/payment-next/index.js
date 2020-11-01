@@ -18,14 +18,13 @@ const { Panel } = Collapse;
 import Wrapper from "./style";
 
 export default function PaymentNext({ appName }) {
-
   return (
     <>
       <Head>
         <title>Pembayaran{appName}</title>
       </Head>
       <Layout>
-        <Heads title="BCA" />
+        <Heads title="BCA" url="/payment" />
         <Wrapper>
           <div className="payment-list">
             <div className="payment-list__va">
@@ -40,11 +39,13 @@ export default function PaymentNext({ appName }) {
               <Collapse accordion expandIconPosition="right">
                 <Panel header="ATM BCA" key="1">
                   <ul>
+                    <li>Masukan kartu ATM dan PIN BCA anda</li>
                     <li>
-                      Masukan kartu ATM dan PIN BCA anda
-                    </li>
-                    <li>
-                      Pilih Menu <b>TRANSAKSI LAINNYA > TRANFER > KEREKENING BCA VIRTUAL ACCOUNT</b>
+                      Pilih Menu{" "}
+                      <b>
+                        TRANSAKSI LAINNYA > TRANFER > KEREKENING BCA VIRTUAL
+                        ACCOUNT
+                      </b>
                     </li>
                     <li>
                       Masukkan <b>39010899129238849</b> sebagai rekening tujuan
@@ -54,12 +55,14 @@ export default function PaymentNext({ appName }) {
                   </ul>
                 </Panel>
                 <Panel header="KLIK BCA" key="2">
-                <ul>
+                  <ul>
+                    <li>Masukan kartu ATM dan PIN BCA anda</li>
                     <li>
-                      Masukan kartu ATM dan PIN BCA anda
-                    </li>
-                    <li>
-                      Pilih Menu <b>TRANSAKSI LAINNYA > TRANFER > KEREKENING BCA VIRTUAL ACCOUNT</b>
+                      Pilih Menu{" "}
+                      <b>
+                        TRANSAKSI LAINNYA > TRANFER > KEREKENING BCA VIRTUAL
+                        ACCOUNT
+                      </b>
                     </li>
                     <li>
                       Masukkan <b>39010899129238849</b> sebagai rekening tujuan
@@ -69,12 +72,14 @@ export default function PaymentNext({ appName }) {
                   </ul>
                 </Panel>
                 <Panel header="BCA MOBILE" key="3">
-                <ul>
+                  <ul>
+                    <li>Masukan kartu ATM dan PIN BCA anda</li>
                     <li>
-                      Masukan kartu ATM dan PIN BCA anda
-                    </li>
-                    <li>
-                      Pilih Menu <b>TRANSAKSI LAINNYA > TRANFER > KEREKENING BCA VIRTUAL ACCOUNT</b>
+                      Pilih Menu{" "}
+                      <b>
+                        TRANSAKSI LAINNYA > TRANFER > KEREKENING BCA VIRTUAL
+                        ACCOUNT
+                      </b>
                     </li>
                     <li>
                       Masukkan <b>39010899129238849</b> sebagai rekening tujuan
@@ -84,12 +89,14 @@ export default function PaymentNext({ appName }) {
                   </ul>
                 </Panel>
                 <Panel header="m-bca (STK - SIM Tool Kit)" key="4">
-                <ul>
+                  <ul>
+                    <li>Masukan kartu ATM dan PIN BCA anda</li>
                     <li>
-                      Masukan kartu ATM dan PIN BCA anda
-                    </li>
-                    <li>
-                      Pilih Menu <b>TRANSAKSI LAINNYA > TRANFER > KEREKENING BCA VIRTUAL ACCOUNT</b>
+                      Pilih Menu{" "}
+                      <b>
+                        TRANSAKSI LAINNYA > TRANFER > KEREKENING BCA VIRTUAL
+                        ACCOUNT
+                      </b>
                     </li>
                     <li>
                       Masukkan <b>39010899129238849</b> sebagai rekening tujuan
@@ -102,9 +109,9 @@ export default function PaymentNext({ appName }) {
             </div>
           </div>
           <div className="payment-btn">
-            <Button type="primary">
-                Konfirmasi
-            </Button>
+            <Link href="/">
+              <Button type="primary">Konfirmasi</Button>
+            </Link>
           </div>
         </Wrapper>
       </Layout>

@@ -1,6 +1,6 @@
 // Vendors
 import React from "react";
-import { Button } from 'antd';
+import { Button } from "antd";
 
 // Next
 import Head from "next/head";
@@ -80,11 +80,13 @@ export default function ConfirmPayment({ appName }) {
               </div>
             </div>
             <div className="btn-payment">
-              <Button type="primary">Konfirmasi dan Bayar</Button>
+              <Link href="/payment">
+                <Button type="primary">Konfirmasi dan Bayar</Button>
+              </Link>
             </div>
           </div>
         </Wrapper>
-        <Footer/>
+        <Footer />
       </Layout>
     </>
   );
