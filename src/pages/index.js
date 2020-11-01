@@ -47,86 +47,92 @@ export default function Home({ appName }) {
           <div className="content-list">
             <div className="content-list__title">
               <h3>New Room</h3>
-              <Link href="#">
+              <Link href="/new-room">
                 <a>View All</a>
               </Link>
             </div>
             <div className="new-list">
-              <div className="new-list-item">
-                <div className="label-status">New</div>
-                <img
-                  className="img-new"
-                  src="https://via.placeholder.com/213x120"
-                />
-                <div className="new-list-item__content">
-                  <h3>Rp 200.000</h3>
-                  <p>514 Beach 139th St #B6 Rock away Park, NY 11694</p>
-                  <div className="new-list-item__content-icon">
-                    <div className="icon-list">
-                      <img src="/img/bathtub.png" />
-                      <span>1</span>
-                    </div>
-                    <div className="icon-list">
-                      <img src="/img/bed.png" />
-                      <span>1</span>
-                    </div>
-                    <div className="icon-list">
-                      <img src="/img/square.png" />
-                      <span>1</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="new-list-item">
-                <div className="label-status">New</div>
-                <img
-                  className="img-new"
-                  src="https://via.placeholder.com/213x120"
-                />
-                <div className="new-list-item__content">
-                  <h3>Rp 200.000</h3>
-                  <p>514 Beach 139th St #B6 Rock away Park, NY 11694</p>
-                  <div className="new-list-item__content-icon">
-                    <div className="icon-list">
-                      <img src="/img/bathtub.png" />
-                      <span>1</span>
-                    </div>
-                    <div className="icon-list">
-                      <img src="/img/bed.png" />
-                      <span>1</span>
-                    </div>
-                    <div className="icon-list">
-                      <img src="/img/square.png" />
-                      <span>1</span>
+              <Link href="/room">
+                <a className="new-list-item">
+                  <div className="label-status">New</div>
+                  <img
+                    className="img-new"
+                    src="https://via.placeholder.com/213x120"
+                  />
+                  <div className="new-list-item__content">
+                    <h3>Rp 200.000</h3>
+                    <p>514 Beach 139th St #B6 Rock away Park, NY 11694</p>
+                    <div className="new-list-item__content-icon">
+                      <div className="icon-list">
+                        <img src="/img/bathtub.png" />
+                        <span>1</span>
+                      </div>
+                      <div className="icon-list">
+                        <img src="/img/bed.png" />
+                        <span>1</span>
+                      </div>
+                      <div className="icon-list">
+                        <img src="/img/square.png" />
+                        <span>1</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div className="new-list-item">
-                <div className="label-status">New</div>
-                <img
-                  className="img-new"
-                  src="https://via.placeholder.com/213x120"
-                />
-                <div className="new-list-item__content">
-                  <h3>Rp 200.000</h3>
-                  <p>514 Beach 139th St #B6 Rock away Park, NY 11694</p>
-                  <div className="new-list-item__content-icon">
-                    <div className="icon-list">
-                      <img src="/img/bathtub.png" />
-                      <span>1</span>
-                    </div>
-                    <div className="icon-list">
-                      <img src="/img/bed.png" />
-                      <span>1</span>
-                    </div>
-                    <div className="icon-list">
-                      <img src="/img/square.png" />
-                      <span>1</span>
+                </a>
+              </Link>
+              <Link href="/room">
+                <a className="new-list-item">
+                  <div className="label-status">New</div>
+                  <img
+                    className="img-new"
+                    src="https://via.placeholder.com/213x120"
+                  />
+                  <div className="new-list-item__content">
+                    <h3>Rp 200.000</h3>
+                    <p>514 Beach 139th St #B6 Rock away Park, NY 11694</p>
+                    <div className="new-list-item__content-icon">
+                      <div className="icon-list">
+                        <img src="/img/bathtub.png" />
+                        <span>1</span>
+                      </div>
+                      <div className="icon-list">
+                        <img src="/img/bed.png" />
+                        <span>1</span>
+                      </div>
+                      <div className="icon-list">
+                        <img src="/img/square.png" />
+                        <span>1</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                </a>
+              </Link>
+              <Link href="/room">
+                <a className="new-list-item">
+                  <div className="label-status">New</div>
+                  <img
+                    className="img-new"
+                    src="https://via.placeholder.com/213x120"
+                  />
+                  <div className="new-list-item__content">
+                    <h3>Rp 200.000</h3>
+                    <p>514 Beach 139th St #B6 Rock away Park, NY 11694</p>
+                    <div className="new-list-item__content-icon">
+                      <div className="icon-list">
+                        <img src="/img/bathtub.png" />
+                        <span>1</span>
+                      </div>
+                      <div className="icon-list">
+                        <img src="/img/bed.png" />
+                        <span>1</span>
+                      </div>
+                      <div className="icon-list">
+                        <img src="/img/square.png" />
+                        <span>1</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </Link>
             </div>
           </div>
           <div className="content-open">
@@ -135,7 +141,8 @@ export default function Home({ appName }) {
             </div>
             <div className="content-open__content">
               <Col sm={24} md={12} lg={12}>
-                <div className="content-open__content-item">
+                <Link href="/room">
+                <a className="content-open__content-item">
                   <img src="https://via.placeholder.com/343x155" />
                   <div className="desc">
                     <div className="label-content">
@@ -148,10 +155,12 @@ export default function Home({ appName }) {
                       Open: <strong>1</strong>-<strong>2pm</strong>
                     </span>
                   </div>
-                </div>
+                </a>
+                </Link>
               </Col>
               <Col sm={24} md={12} lg={12}>
-                <div className="content-open__content-item">
+                <Link href="/room">
+                <a className="content-open__content-item">
                   <img src="https://via.placeholder.com/343x155" />
                   <div className="desc">
                     <div className="label-content">
@@ -164,10 +173,12 @@ export default function Home({ appName }) {
                       Open: <strong>1</strong>-<strong>2pm</strong>
                     </span>
                   </div>
-                </div>
+                </a>
+                </Link>
               </Col>
               <Col sm={24} md={12} lg={12}>
-                <div className="content-open__content-item">
+                <Link href="/room">
+                <a className="content-open__content-item">
                   <img src="https://via.placeholder.com/343x155" />
                   <div className="desc">
                     <div className="label-content">
@@ -180,10 +191,12 @@ export default function Home({ appName }) {
                       Open: <strong>1</strong>-<strong>2pm</strong>
                     </span>
                   </div>
-                </div>
+                </a>
+                </Link>
               </Col>
               <Col sm={24} md={12} lg={12}>
-                <div className="content-open__content-item">
+                <Link href="/room">
+                <a className="content-open__content-item">
                   <img src="https://via.placeholder.com/343x155" />
                   <div className="desc">
                     <div className="label-content">
@@ -196,7 +209,8 @@ export default function Home({ appName }) {
                       Open: <strong>1</strong>-<strong>2pm</strong>
                     </span>
                   </div>
-                </div>
+                </a>
+                </Link>
               </Col>
             </div>
           </div>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Wrapper } from "./style";
 import { Row, Col, Button } from "antd";
-
+import Link from "next/link";
 const ButtonPayout = () => {
   return (
     <>
@@ -11,9 +11,11 @@ const ButtonPayout = () => {
             <span><strong>Rp 300.000</strong> / malam</span>
           </div>
           <div className="content_button">
-            <Button type="primary">
+          <Link href="/confirm-payment">
+            <Button onClick="" type="primary">
               Periksa Ketersediaan
             </Button>
+          </Link>
           </div>
         </div>
       </Wrapper>

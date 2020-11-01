@@ -22,10 +22,10 @@ export default function Payment({ appName }) {
         <title>Pembayaran{appName}</title>
       </Head>
       <Layout>
-        <Heads title="Pembayaran" />
+        <Heads title="Pembayaran" url="/confirm-payment" />
         <Wrapper>
           <div className="payment-list">
-            <Link href="#">
+            <Link href="/payment-next">
               <a className="payment-list__item">
                 <div className="text">
                   <img src="/img/bca.png" />
@@ -36,7 +36,7 @@ export default function Payment({ appName }) {
               </a>
             </Link>
             <div className="divider"></div>
-            <Link href="#">
+            <Link href="/payment-next">
               <a className="payment-list__item">
                 <div className="text">
                   <img src="/img/bca.png" />
@@ -47,7 +47,7 @@ export default function Payment({ appName }) {
               </a>
             </Link>
             <div className="divider"></div>
-            <Link href="#">
+            <Link href="/payment-next">
               <a className="payment-list__item">
                 <div className="text">
                   <img src="/img/bca.png" />
