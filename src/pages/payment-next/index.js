@@ -109,7 +109,7 @@ export default function PaymentNext({ appName }) {
             </div>
           </div>
           <div className="payment-btn">
-            <Link href="/">
+            <Link href="/thanks">
               <Button type="primary">Konfirmasi</Button>
             </Link>
           </div>
