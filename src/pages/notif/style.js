@@ -31,7 +31,7 @@ padding: 15px;
         box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px !important;
         padding: 10px;
         margin-top: 10px;
-        border: 4px;
+        border-radius: 4px;
         margin-bottom: 10px;
         a {
             font-family: "Nunito";
