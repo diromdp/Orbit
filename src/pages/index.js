@@ -6,7 +6,9 @@ import Slider from "react-slick";
 // Next
 import Head from "next/head";
 import Link from "next/link";
-import Layout from "../components/layout";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import FloatingLabelInput from 'react-floating-label-input';
 
 //style
 import Wrapper from "./style";
@@ -23,199 +25,92 @@ export default function Home({ appName }) {
   return (
     <>
       <Head>
-        <title>Home {appName}</title>
+        <title>Login {appName}</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ovo&display=swap" rel="stylesheet"/>
       </Head>
-      <Layout>
         <Wrapper>
-          <Slider {...settings}>
-            <div className="banner-promo-item">
-              <img src="https://via.placeholder.com/375x188" />
-            </div>
-            <div className="banner-promo-item">
-              <img src="https://via.placeholder.com/375x188" />
-            </div>
-            <div className="banner-promo-item">
-              <img src="https://via.placeholder.com/375x188" />
-            </div>
-            <div className="banner-promo-item">
-              <img src="https://via.placeholder.com/375x188" />
-            </div>
-            <div className="banner-promo-item">
-              <img src="https://via.placeholder.com/375x188" />
-            </div>
-          </Slider>
-          <div className="content-list">
-            <div className="content-list__title">
-              <h3>New Room</h3>
-              <Link href="/new-room">
-                <a>View All</a>
-              </Link>
-            </div>
-            <div className="new-list">
-              <Link href="/room">
-                <a className="new-list-item">
-                  <div className="label-status">New</div>
-                  <img
-                    className="img-new"
-                    src="https://via.placeholder.com/213x120"
-                  />
-                  <div className="new-list-item__content">
-                    <h3>Rp 200.000</h3>
-                    <p>514 Beach 139th St #B6 Rock away Park, NY 11694</p>
-                    <div className="new-list-item__content-icon">
-                      <div className="icon-list">
-                        <img src="/img/bathtub.png" />
-                        <span>1</span>
+          <Header/>
+          <main>
+            <div className="container">
+              <div className="row">
+                <div className="col-md-6 col-lg-6 order-md-last">
+                  <div className="content-login">
+                    <div className="card-login">
+                      <div className="desc">
+                        <h1>Login Orbit</h1>
+                        <div className="text-login">Masukkan Email Anda</div>
+                        <div className="input-content">
+                          <FloatingLabelInput
+                            id="email"
+                            className="input-login"
+                            label="Alamat Email"
+                            value={null}
+                          />
+                        </div>
                       </div>
-                      <div className="icon-list">
-                        <img src="/img/bed.png" />
-                        <span>1</span>
+                      <div className="btn-login">
+                        <button type="button">Lanjut</button>
                       </div>
-                      <div className="icon-list">
-                        <img src="/img/square.png" />
-                        <span>1</span>
+                      <div className="content-sosmed">
+                        <span>Atau login melalui</span>
+                        <div className="list">
+                          <div className="list-item">
+                            <img src="/img/ic-fb-blue.svg"/>
+                          </div>
+                          <div className="list-item">
+                            <img src="/img/icon-google.svg"/>
+                          </div>
+                          <div className="list-item">
+                            <img src="/img/icon-apple.svg"/>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </a>
-              </Link>
-              <Link href="/room">
-                <a className="new-list-item">
-                  <div className="label-status">New</div>
-                  <img
-                    className="img-new"
-                    src="https://via.placeholder.com/213x120"
-                  />
-                  <div className="new-list-item__content">
-                    <h3>Rp 200.000</h3>
-                    <p>514 Beach 139th St #B6 Rock away Park, NY 11694</p>
-                    <div className="new-list-item__content-icon">
-                      <div className="icon-list">
-                        <img src="/img/bathtub.png" />
-                        <span>1</span>
+                </div>
+                <div className="col-md-6 col-lg-6 order-md-first">
+                  <div className="content-desc">
+                    <div className="content-desc__item">
+                      <div className="item-img">
+                        <img src="/img/icon-process.svg"/>
                       </div>
-                      <div className="icon-list">
-                        <img src="/img/bed.png" />
-                        <span>1</span>
+                      <div className="item-content">
+                        <h4>
+                        Proses Transaksi Otomatis Tersimpan
+                        </h4>
+                        <p>Simpan dan selesaikan transaksi pembelian Orbit tanpa harus membuat ulang pesanan Anda untuk tiap pembelian</p>
                       </div>
-                      <div className="icon-list">
-                        <img src="/img/square.png" />
-                        <span>1</span>
+                    </div>
+                    <div className="content-desc__item">
+                      <div className="item-img">
+                        <img src="/img/icon-price.svg"/>
+                      </div>
+                      <div className="item-content">
+                        <h4>
+                        Lihat Status Order
+                        </h4>
+                        <p>Cek status order modem Orbit dengan mudah di mana saja</p>
+                      </div>
+                    </div>
+                    <div className="content-desc__item">
+                      <div className="item-img">
+                        <img src="/img/icon-check.svg"/>
+                      </div>
+                      <div className="item-content">
+                        <h4>
+                        Cek Status Pengiriman
+                        </h4>
+                        <p>Cek informasi status pengirim modem Orbit real time</p>
                       </div>
                     </div>
                   </div>
-                </a>
-              </Link>
-              <Link href="/room">
-                <a className="new-list-item">
-                  <div className="label-status">New</div>
-                  <img
-                    className="img-new"
-                    src="https://via.placeholder.com/213x120"
-                  />
-                  <div className="new-list-item__content">
-                    <h3>Rp 200.000</h3>
-                    <p>514 Beach 139th St #B6 Rock away Park, NY 11694</p>
-                    <div className="new-list-item__content-icon">
-                      <div className="icon-list">
-                        <img src="/img/bathtub.png" />
-                        <span>1</span>
-                      </div>
-                      <div className="icon-list">
-                        <img src="/img/bed.png" />
-                        <span>1</span>
-                      </div>
-                      <div className="icon-list">
-                        <img src="/img/square.png" />
-                        <span>1</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </Link>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="content-open">
-            <div className="content-open__title">
-              <h3>Open Room</h3>
-            </div>
-            <div className="content-open__content">
-              <Col sm={24} md={12} lg={12}>
-                <Link href="/room">
-                <a className="content-open__content-item">
-                  <img src="https://via.placeholder.com/343x155" />
-                  <div className="desc">
-                    <div className="label-content">
-                      <div className="label-item">NEW</div>
-                      <div className="label-item">OPEN HOUSE</div>
-                    </div>
-                    <h2>RP 120.000,-</h2>
-                    <p>514 Beach 139th St #B6 Rock away Park, NY</p>
-                    <span>
-                      Open: <strong>1</strong>-<strong>2pm</strong>
-                    </span>
-                  </div>
-                </a>
-                </Link>
-              </Col>
-              <Col sm={24} md={12} lg={12}>
-                <Link href="/room">
-                <a className="content-open__content-item">
-                  <img src="https://via.placeholder.com/343x155" />
-                  <div className="desc">
-                    <div className="label-content">
-                      <div className="label-item">NEW</div>
-                      <div className="label-item">OPEN HOUSE</div>
-                    </div>
-                    <h2>RP 120.000,-</h2>
-                    <p>514 Beach 139th St #B6 Rock away Park, NY</p>
-                    <span>
-                      Open: <strong>1</strong>-<strong>2pm</strong>
-                    </span>
-                  </div>
-                </a>
-                </Link>
-              </Col>
-              <Col sm={24} md={12} lg={12}>
-                <Link href="/room">
-                <a className="content-open__content-item">
-                  <img src="https://via.placeholder.com/343x155" />
-                  <div className="desc">
-                    <div className="label-content">
-                      <div className="label-item">NEW</div>
-                      <div className="label-item">OPEN HOUSE</div>
-                    </div>
-                    <h2>RP 120.000,-</h2>
-                    <p>514 Beach 139th St #B6 Rock away Park, NY</p>
-                    <span>
-                      Open: <strong>1</strong>-<strong>2pm</strong>
-                    </span>
-                  </div>
-                </a>
-                </Link>
-              </Col>
-              <Col sm={24} md={12} lg={12}>
-                <Link href="/room">
-                <a className="content-open__content-item">
-                  <img src="https://via.placeholder.com/343x155" />
-                  <div className="desc">
-                    <div className="label-content">
-                      <div className="label-item">NEW</div>
-                      <div className="label-item">OPEN HOUSE</div>
-                    </div>
-                    <h2>RP 120.000,-</h2>
-                    <p>514 Beach 139th St #B6 Rock away Park, NY</p>
-                    <span>
-                      Open: <strong>1</strong>-<strong>2pm</strong>
-                    </span>
-                  </div>
-                </a>
-                </Link>
-              </Col>
-            </div>
-          </div>
+          </main>
+          <Footer/>
         </Wrapper>
-      </Layout>
     </>
   );
 }

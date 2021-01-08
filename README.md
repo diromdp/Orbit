@@ -1,9 +1,6 @@
 ## Getting Started
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
+First, before run server:
+Yarn Install
+After finish , run server dev:
+Yarn Dev
