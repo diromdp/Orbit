@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Wrapper } from "./style";
-import Link from "next/link";
 
 const Header = ({title, url}) => {
   return (

@@ -1,14 +1,13 @@
 // Vendors
 import React from "react";
-import { Row, Col } from "antd";
-import Slider from "react-slick";
+import FloatingLabelInput from 'react-floating-label-input';
 
 // Next
 import Head from "next/head";
-import Link from "next/link";
+
+// Component
 import Header from "../components/header";
 import Footer from "../components/footer";
-import FloatingLabelInput from 'react-floating-label-input';
 
 //style
 import Wrapper from "./style";
